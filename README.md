@@ -1,1 +1,1 @@
-# flappy_bird
+# игра flappy bird на чистом js
