@@ -66,7 +66,7 @@ function draw() {
           && (yPos <= pipe[i].y + pipeUp.height
             || yPos + bird.height >= pipe[i].y + pipeUp.height + gap)
             || yPos + bird.height >= cvs.height - fg.height) {
-                pipeBottom.onload = finishGame; // заново
+                location.onload(); // заново
             }
         
         if (pipe[i].x == 5) {
@@ -89,7 +89,3 @@ function draw() {
 }
 
 pipeBottom.onload = draw;
-
-function finishGame() {
-   ctx.fillText('Счет:' + score, 10, 10)
-}
